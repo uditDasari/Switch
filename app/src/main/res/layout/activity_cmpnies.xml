@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
     tools:context=".cmpnies">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="30"
+        android:layout_height="30"
+        card_view:srcCompat="@drawable/ic_icons8_checkmark"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="30"
+        android:layout_height="30"
+        card_view:srcCompat="@drawable/ic_icons8_checkmark"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="108dp" />
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardView"
@@ -30,11 +45,12 @@
         <ImageView
             android:layout_width="300dp"
             android:layout_height="70dp"
-            android:layout_margin="24dp"
             android:layout_gravity="center"
+            android:layout_margin="24dp"
             android:src="@drawable/ic_lyftsvg">
 
         </ImageView>
+
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -119,4 +135,21 @@
 
         </ImageView>
     </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="30"
+        android:layout_height="30"
+        card_view:srcCompat="@drawable/ic_icons8_checkmark"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="165dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="30"
+        android:layout_height="30"
+        card_view:srcCompat="@drawable/ic_icons8_checkmark"
+        tools:layout_editor_absoluteX="364dp"
+        tools:layout_editor_absoluteY="251dp" />
+
 </android.support.constraint.ConstraintLayout>
