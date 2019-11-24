@@ -36,7 +36,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
-        android:text="User name"
+        android:text="Username"
         android:textColor="#010202"
         android:textSize="18sp"
         android:textStyle="bold"
