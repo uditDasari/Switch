@@ -25,31 +25,39 @@
                 android:layout_width="100dp"
                 android:layout_height="50dp"
 
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="60dp" />
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="58dp" />
 
             <ImageView
                 android:id="@+id/item_arrow"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                tools:layout_editor_absoluteX="200dp"
-                tools:layout_editor_absoluteY="60dp" />
+                app:layout_constraintBottom_toBottomOf="@+id/item_company"
+                app:layout_constraintEnd_toStartOf="@+id/item_sign"
+                app:layout_constraintTop_toTopOf="@+id/item_company" />
 
             <ImageView
                 android:id="@+id/item_sign"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_attach_money_black_24dp"
-                tools:layout_editor_absoluteX="150dp"
-                tools:layout_editor_absoluteY="180dp" />
+                app:layout_constraintBottom_toBottomOf="@+id/item_arrow"
+                app:layout_constraintEnd_toStartOf="@+id/item_dollar"
+                app:layout_constraintTop_toTopOf="@+id/item_arrow" />
 
             <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/item_dollar"
-            />
+                android:id="@+id/item_dollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/item_sign"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/item_sign" />
 
-    </>
+        </>
     </androidx.cardview.widget.CardView>
 
 </>
