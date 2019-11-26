@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/nav_home"
-        android:icon="@drawable/MonitorActive"
+        android:icon="@drawable/ic_monitor___active"
         android:title="dth" />
 
     <item
