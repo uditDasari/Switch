@@ -4,21 +4,22 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class POJO {
-    String company,arrrow,price;
+    int company,arrrow;
+    String price;
 
-    public String getCompany() {
+    public int getCompany() {
         return company;
     }
 
-    public void setCompany(String company) {
+    public void setCompany(Integer company) {
         this.company = company;
     }
 
-    public String getArrrow() {
+    public int getArrrow() {
         return arrrow;
     }
 
-    public void setArrrow(String arrrow) {
+    public void setArrrow(int arrrow) {
         this.arrrow = arrrow;
     }
 
@@ -30,7 +31,7 @@ public class POJO {
         this.price = price;
     }
 
-    public POJO(String company, String arrrow, String price) {
+    public POJO(int company,int arrrow, String price) {
         this.company = company;
         this.arrrow = arrrow;
         this.price = price;
