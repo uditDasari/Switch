@@ -8,6 +8,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
@@ -25,6 +27,9 @@ public class upFragment extends Fragment {
 
     TabLayout tabLayout;
     DisplayMetrics displaymetrics ;
+    ViewPagerAdapter pagerAdapter;
+    ViewPager viewPager;
+
 
 
     public upFragment() {
@@ -35,55 +40,15 @@ public class upFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        // Inflate the layout for this fragment
-        /*tabLayout=getView().findViewById(R.id.tabs);
-        LinearLayout layout = ((LinearLayout) ((LinearLayout) tabLayout.getChildAt(0)).getChildAt(0));
-        LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) layout.getLayoutParams();
-        layoutParams.weight = 10;
-        layout.setLayoutParams(layoutParams);
-        LinearLayout layout1 = ((LinearLayout) ((LinearLayout) tabLayout.getChildAt(0)).getChildAt(1));
-        LinearLayout.LayoutParams layoutParams1 = (LinearLayout.LayoutParams) layout1.getLayoutParams();
-        layoutParams.weight = 40;
-        layout.setLayoutParams(layoutParams);
-        LinearLayout layout2 = ((LinearLayout) ((LinearLayout) tabLayout.getChildAt(0)).getChildAt(2));
-        LinearLayout.LayoutParams layoutParams2 = (LinearLayout.LayoutParams) layout2.getLayoutParams();
-        layoutParams.weight = 20;
-        layout.setLayoutParams(layoutParams);
-        LinearLayout layout3 = ((LinearLayout) ((LinearLayout) tabLayout.getChildAt(0)).getChildAt(3));
-        LinearLayout.LayoutParams layoutParams3 = (LinearLayout.LayoutParams) layout3.getLayoutParams();
-        layoutParams.weight = 20;
-        layout.setLayoutParams(layoutParams);*/
         return inflater.inflate(R.layout.fragment_up, container, false);
     }
-
-   /* @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        tabLayout=((Activity)context).findViewById(R.id.tabs);
-        LinearLayout layout = ((LinearLayout) ((LinearLayout) tabLayout.getChildAt(0)).getChildAt(0));
-        LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) layout.getLayoutParams();
-        layoutParams.weight = 10;
-        layout.setLayoutParams(layoutParams);
-        LinearLayout layout1 = ((LinearLayout) ((LinearLayout) tabLayout.getChildAt(0)).getChildAt(1));
-        LinearLayout.LayoutParams layoutParams1 = (LinearLayout.LayoutParams) layout1.getLayoutParams();
-        layoutParams.weight = 40;
-        layout.setLayoutParams(layoutParams);
-        LinearLayout layout2 = ((LinearLayout) ((LinearLayout) tabLayout.getChildAt(0)).getChildAt(2));
-        LinearLayout.LayoutParams layoutParams2 = (LinearLayout.LayoutParams) layout2.getLayoutParams();
-        layoutParams.weight = 20;
-        layout.setLayoutParams(layoutParams);
-        LinearLayout layout3 = ((LinearLayout) ((LinearLayout) tabLayout.getChildAt(0)).getChildAt(3));
-        LinearLayout.LayoutParams layoutParams3 = (LinearLayout.LayoutParams) layout3.getLayoutParams();
-        layoutParams.weight = 20;
-        layout.setLayoutParams(layoutParams);
-    }*/
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
        // super.onViewCreated(view, savedInstanceState);
         tabLayout=getView().findViewById(R.id.tabs);
-
+        viewPager=getView().findViewById(R.id.view_pager_id);
+        pagerAdapter=new ViewPagerAdapter(getFragmentManager());
+        tabLayout.setupWithViewPager(viewPager);
         //getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
         LinearLayout layout = ((LinearLayout) ((LinearLayout) tabLayout.getChildAt(0)).getChildAt(0));
         LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) layout.getLayoutParams();
