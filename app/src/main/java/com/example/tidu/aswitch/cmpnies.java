@@ -6,10 +6,12 @@ import android.os.Bundle;
 import androidx.cardview.widget.CardView;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class cmpnies extends AppCompatActivity {
 
     CardView imageView,imageView1,imageView2,imageView3;ImageView img11,img12,img13,img14;
+    TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,7 @@ public class cmpnies extends AppCompatActivity {
         img12=findViewById(R.id.imageView12);
         img13=findViewById(R.id.imageView13);
         img14=findViewById(R.id.imageView14);
+        textView=findViewById(R.id.tvcon);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,6 +51,12 @@ public class cmpnies extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(cmpnies.this,Grubhub.class));
                 img14.setVisibility(View.VISIBLE);
+            }
+        });
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(cmpnies.this,markets.class));
             }
         });
     }
