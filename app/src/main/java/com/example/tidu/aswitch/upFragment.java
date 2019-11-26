@@ -28,4 +28,5 @@ public class upFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_up, container, false);
     }
 
+
 }
