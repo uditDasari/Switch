@@ -3,22 +3,22 @@
 
     <item
         android:id="@+id/nav_home"
-        android:icon="@drawable/ic_monitor___active"
+        android:icon="@drawable/ic_trending_up_black_24dp"
         android:title="dth" />
 
     <item
         android:id="@+id/nav2"
-        android:icon="@drawable/EarningsActive"
+        android:icon="@drawable/ic_attach_money_black_24dp"
         android:title="dth" />
 
 
     <item
         android:id="@+id/nav_search"
-        android:icon="@drawable/ImproveActive"
+        android:icon="@drawable/ic_autorenew_black_24dp"
         android:title="dthdth" />
 
     <item
         android:id="@+id/nav_favorites"
-        android:icon="@drawable/ProfileActive"
+        android:icon="@drawable/ic_person_black_24dp"
         android:title="dsthdthtdesh" />
 </menu>
