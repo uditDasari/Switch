@@ -2,23 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_home"
+        android:id="@+id/trer"
         android:icon="@drawable/ic_trending_up_black_24dp"
         android:title="dth" />
 
     <item
-        android:id="@+id/nav2"
+        android:id="@+id/mon"
         android:icon="@drawable/ic_attach_money_black_24dp"
         android:title="dth" />
 
 
     <item
-        android:id="@+id/nav_search"
+        android:id="@+id/renew"
         android:icon="@drawable/ic_autorenew_black_24dp"
         android:title="dthdth" />
 
     <item
-        android:id="@+id/nav_favorites"
+        android:id="@+id/pers"
         android:icon="@drawable/ic_person_black_24dp"
         android:title="dsthdthtdesh" />
 </menu>
