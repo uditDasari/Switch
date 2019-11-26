@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/nav_home"
-        android:icon="@drawable/ic_earnings___active"
+        android:icon="@drawable/ear1"
         android:title="dth" />
 
     <item
