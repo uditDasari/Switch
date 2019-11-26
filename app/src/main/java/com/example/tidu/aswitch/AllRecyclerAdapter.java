@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 public class AllRecyclerAdapter extends RecyclerView.Adapter<AllRecyclerAdapter.AllViewHolder> {
@@ -25,13 +27,15 @@ public class AllRecyclerAdapter extends RecyclerView.Adapter<AllRecyclerAdapter.
     @NonNull
     @Override
     public AllViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(context).inflate()
-        return AllViewHolder(view);
+        View view= LayoutInflater.from(context).inflate(R.layout.item_view_market,parent,false);
+        return new AllViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull AllViewHolder holder, int position) {
-
+        Picasso.with(context).load(arrayList.get(position).getCompany()).into(holder.imageView1);
+        Picasso.with(context).load(arrayList.get(position).getArrrow()).into(holder.imageView2);
+        holder.textView.setText(arrayList.get(position).getPrice());
     }
 
     @Override
@@ -45,6 +49,9 @@ public class AllRecyclerAdapter extends RecyclerView.Adapter<AllRecyclerAdapter.
         TextView textView;
         public AllViewHolder(@NonNull View itemView) {
             super(itemView);
+            imageView1=itemView.findViewById(R.id.item_company);
+            imageView2=itemView.findViewById(R.id.item_arrow);
+            textView=itemView.findViewById(R.id.item_dollar);
 
         }
     }

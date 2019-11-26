@@ -4,33 +4,35 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class POJO {
-    private ImageView company,arrow;
-    private TextView dollar;
+    String company,arrrow,price;
 
-    public POJO() {
-    }
-
-    public ImageView getCompany() {
+    public String getCompany() {
         return company;
     }
 
-    public void setCompany(ImageView company) {
+    public void setCompany(String company) {
         this.company = company;
     }
 
-    public ImageView getArrow() {
-        return arrow;
+    public String getArrrow() {
+        return arrrow;
     }
 
-    public void setArrow(ImageView arrow) {
-        this.arrow = arrow;
+    public void setArrrow(String arrrow) {
+        this.arrrow = arrrow;
     }
 
-    public TextView getDollar() {
-        return dollar;
+    public String getPrice() {
+        return price;
     }
 
-    public void setDollar(TextView dollar) {
-        this.dollar = dollar;
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public POJO(String company, String arrrow, String price) {
+        this.company = company;
+        this.arrrow = arrrow;
+        this.price = price;
     }
 }
