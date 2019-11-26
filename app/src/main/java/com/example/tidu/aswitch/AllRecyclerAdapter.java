@@ -33,8 +33,8 @@ public class AllRecyclerAdapter extends RecyclerView.Adapter<AllRecyclerAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull AllViewHolder holder, int position) {
-        Picasso.with(context).load("R.drawable.lyfylogo").into(holder.imageView1);
-        Picasso.with(context).load(arrayList.get(position).getArrrow()).into(holder.imageView2);
+        Picasso.with(context).load(R.drawable.ic_luftblack).into(holder.imageView1);
+        Picasso.with(context).load(R.drawable.ic_uparr).into(holder.imageView2);
         holder.textView.setText(arrayList.get(position).getPrice());
     }
 
