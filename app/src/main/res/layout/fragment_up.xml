@@ -103,6 +103,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="88dp"
                 android:translationZ="16dp"
+                app:tabIndicator="@drawable/ic_line"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
