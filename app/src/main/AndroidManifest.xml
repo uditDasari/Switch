@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cmpnies"></activity>
+        <activity android:name=".markets"></activity>
+        <activity android:name=".cmpnies" />
         <activity android:name=".TaskRabbit" />
         <activity android:name=".Grubhub" />
         <activity android:name=".LyftActivity" />
