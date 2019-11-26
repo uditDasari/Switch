@@ -39,6 +39,7 @@ public class AllFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        arrayList=new ArrayList<POJO>();
         recyclerView=view.findViewById(R.id.allrecycler);
         allRecyclerAdapter=new AllRecyclerAdapter(getContext(),arrayList);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));

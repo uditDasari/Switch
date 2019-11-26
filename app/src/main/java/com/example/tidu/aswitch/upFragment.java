@@ -48,6 +48,7 @@ public class upFragment extends Fragment {
         tabLayout=getView().findViewById(R.id.tabs);
         viewPager=getView().findViewById(R.id.view_pager_id);
         pagerAdapter=new ViewPagerAdapter(getFragmentManager());
+        viewPager.setAdapter(pagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
         //getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
         LinearLayout layout = ((LinearLayout) ((LinearLayout) tabLayout.getChildAt(0)).getChildAt(0));

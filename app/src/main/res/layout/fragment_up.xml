@@ -202,7 +202,7 @@
                 android:layout_height="match_parent"
                 android:id="@+id/view_pager_id"
                 />
-        </>
+        </FrameLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
