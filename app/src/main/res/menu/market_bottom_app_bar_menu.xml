@@ -3,22 +3,22 @@
 
     <item
         android:id="@+id/nav_home"
-        android:icon="@drawable/ear1"
+        android:icon="@drawable/MonitorActive"
         android:title="dth" />
 
     <item
         android:id="@+id/nav2"
-        android:icon="@drawable/ic_earnings___inactive"
+        android:icon="@drawable/EarningsActive"
         android:title="dth" />
 
 
     <item
         android:id="@+id/nav_search"
-        android:icon="@drawable/ic_monitor___inactive"
+        android:icon="@drawable/ImproveActive"
         android:title="dthdth" />
 
     <item
         android:id="@+id/nav_favorites"
-        android:icon="@drawable/ic_profile___inactive"
+        android:icon="@drawable/ProfileActive"
         android:title="dsthdthtdesh" />
 </menu>
