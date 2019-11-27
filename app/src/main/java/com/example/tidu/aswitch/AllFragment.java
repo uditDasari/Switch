@@ -44,14 +44,10 @@ public class AllFragment extends Fragment {
         allRecyclerAdapter=new AllRecyclerAdapter(getContext(),arrayList);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(allRecyclerAdapter);
-        arrayList.add(new POJO(R.drawable.grubhubblack,R.drawable.path,"22.00"));
-        arrayList.add(new POJO(R.drawable.luftblack,R.drawable.pathgreen,"20.00"));
-        arrayList.add(new POJO(R.drawable.uberblack,R.drawable.path,"10.00"));
-        arrayList.add(new POJO(R.drawable.taskrabbitblack,R.drawable.pathgreen,"19.00"));
-        arrayList.add(new POJO(R.drawable.uberblack,R.drawable.path,"10.00"));
-        arrayList.add(new POJO(R.drawable.taskrabbitblack,R.drawable.pathgreen,"19.00"));
-        arrayList.add(new POJO(R.drawable.grubhubblack,R.drawable.path,"22.00"));
-        arrayList.add(new POJO(R.drawable.luftblack,R.drawable.pathgreen,"20.00"));
+        arrayList.add(new POJO(R.drawable.grubhubblack,R.drawable.path,"19.00"));
+        arrayList.add(new POJO(R.drawable.luftblack,R.drawable.pathgreen,"22.00"));
+        arrayList.add(new POJO(R.drawable.uberblack,R.drawable.pathgreen,"16.00"));
+        arrayList.add(new POJO(R.drawable.taskrabbitblack,R.drawable.pathgreen,"14.00"));
         allRecyclerAdapter.notifyDataSetChanged();
 
     }

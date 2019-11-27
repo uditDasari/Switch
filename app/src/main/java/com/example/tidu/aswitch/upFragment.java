@@ -3,10 +3,12 @@ package com.example.tidu.aswitch;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
@@ -29,7 +31,7 @@ public class upFragment extends Fragment {
     DisplayMetrics displaymetrics ;
     ViewPagerAdapter pagerAdapter;
     ViewPager viewPager;
-
+    CardView cardView;
 
 
     public upFragment() {
@@ -49,6 +51,13 @@ public class upFragment extends Fragment {
         viewPager=getView().findViewById(R.id.view_pager_id);
         pagerAdapter=new ViewPagerAdapter(getFragmentManager());
         viewPager.setAdapter(pagerAdapter);
+        cardView=getView().findViewById(R.id.carddetail);
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),lyftDetail.class));
+            }
+        });
         tabLayout.setupWithViewPager(viewPager);
         //getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
         LinearLayout layout = ((LinearLayout) ((LinearLayout) tabLayout.getChildAt(0)).getChildAt(0));
