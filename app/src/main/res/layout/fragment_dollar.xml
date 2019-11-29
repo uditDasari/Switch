@@ -83,20 +83,20 @@
         app:layout_constraintGuide_percent="0.33" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/carddetaildollar"
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:id="@+id/carddetaildollar"
         android:clickable="true"
-        android:translationZ="8dp"
         android:foreground="?android:attr/selectableItemBackground"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        android:translationZ="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/tabsdollar1"
         card_view:cardCornerRadius="4dp"
         card_view:cardElevation="4dp">
 
@@ -183,7 +183,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 android:src="@drawable/ic_t3"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView19" />
