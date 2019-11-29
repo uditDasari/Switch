@@ -45,8 +45,8 @@
         app:tabBackground="@drawable/tab_layout_selector"
         app:tabIndicatorHeight="0dp"
         app:tabMode="scrollable"
-        app:tabPaddingEnd="16dp"
-        app:tabPaddingStart="16dp"
+        app:tabPaddingEnd="8dp"
+        app:tabPaddingStart="8dp"
         app:tabRippleColor="@null"
         app:tabSelectedTextColor="#fff"
         app:tabTextAppearance="@style/TabTextAppearance"
@@ -90,7 +90,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:id="@+id/carddetaildollar"
-        android:background="#fff"
+        android:background="@drawable/reccopy"
         android:clickable="true"
         android:translationZ="8dp"
         android:foreground="?android:attr/selectableItemBackground"
@@ -100,7 +100,7 @@
         app:layout_constraintTop_toTopOf="@+id/constraintLayout"
         card_view:cardCornerRadius="4dp"
         card_view:cardElevation="4dp">
-
+<!--
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -176,7 +176,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView5" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
+!-->
     </androidx.cardview.widget.CardView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -239,12 +239,12 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tabs">
+            app:layout_constraintTop_toBottomOf="@+id/tabsdollar2">
+
             <androidx.viewpager.widget.ViewPager
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
                 android:id="@+id/view_pager_id_dollar"
-                />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
         </FrameLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

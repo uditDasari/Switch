@@ -51,7 +51,7 @@ public class dollarFragment extends Fragment {
         for(int i=0; i < tabLayout1.getTabCount(); i++) {
             View tab = ((ViewGroup) tabLayout1.getChildAt(0)).getChildAt(i);
             ViewGroup.MarginLayoutParams p = (ViewGroup.MarginLayoutParams) tab.getLayoutParams();
-            p.setMargins(0, 0, 50, 0);
+            p.setMargins(0, 0, 20, 0);
             tab.requestLayout();
         }
         cardView=getView().findViewById(R.id.carddetaildollar);
