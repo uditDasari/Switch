@@ -84,7 +84,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="230dp"
+        android:layout_height="220dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginEnd="24dp"
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:text="$144.05"
                 android:textColor="#000"
                 android:textSize="24sp"
@@ -123,7 +123,7 @@
                 android:id="@+id/textView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:text="12"
@@ -183,20 +183,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:src="@drawable/ic_t3"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView19" />
-
-            <ImageView
-                android:id="@+id/imageView22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
-                android:src="@drawable/ic_t4"
-                app:layout_constraintEnd_toStartOf="@+id/textView12"
                 app:layout_constraintTop_toBottomOf="@+id/imageView19" />
 
             <ImageView
