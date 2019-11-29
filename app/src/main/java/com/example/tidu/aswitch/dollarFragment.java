@@ -25,7 +25,7 @@ import com.google.android.material.tabs.TabLayout;
 public class dollarFragment extends Fragment {
     TabLayout tabLayout,tabLayout1;
     DisplayMetrics displaymetrics ;
-    ViewPagerAdapter pagerAdapter;
+    dollarviewpager pagerAdapter;
     ViewPager viewPager;
     CardView cardView;
 
@@ -45,7 +45,7 @@ public class dollarFragment extends Fragment {
         // super.onViewCreated(view, savedInstanceState);
         tabLayout=getView().findViewById(R.id.tabsdollar2);
         viewPager=getView().findViewById(R.id.view_pager_id_dollar);
-        pagerAdapter=new ViewPagerAdapter(getFragmentManager());
+        pagerAdapter=new dollarviewpager(getFragmentManager());
         viewPager.setAdapter(pagerAdapter);
         tabLayout1=getView().findViewById(R.id.tabsdollar1);
         for(int i=0; i < tabLayout1.getTabCount(); i++) {
