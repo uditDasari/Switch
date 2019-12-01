@@ -147,13 +147,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView20" />
 
-            <ImageView
-                android:id="@+id/imageView18"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ttlrevnew"
-                tools:layout_editor_absoluteX="146dp"
-                tools:layout_editor_absoluteY="8dp" />
 
             <ImageView
                 android:id="@+id/imageView19"
