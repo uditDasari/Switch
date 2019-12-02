@@ -55,6 +55,7 @@
         android:layout_marginRight="8dp"
         android:textColor="#000"
         android:textSize="22sp"
+        android:text="driver.switch@gmail"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,7 +82,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="8dp"
-
+        android:text="switch2019"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:inputType="textPassword"

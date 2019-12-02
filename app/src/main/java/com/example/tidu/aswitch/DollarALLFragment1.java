@@ -2,6 +2,9 @@ package com.example.tidu.aswitch;
 
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -9,22 +12,18 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
 import java.util.ArrayList;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DollarALLFragment extends Fragment {
+public class DollarALLFragment1 extends Fragment {
 
     RecyclerView recyclerView;
     ArrayList<POJO2> arrayList;
    DollarAllRecyclerViewAdapter dollarAllRecyclerViewAdapter;
-    public DollarALLFragment() {
+    public DollarALLFragment1() {
         // Required empty public constructor
     }
 
@@ -42,9 +41,9 @@ public class DollarALLFragment extends Fragment {
         dollarAllRecyclerViewAdapter=new DollarAllRecyclerViewAdapter(getContext(),arrayList);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(dollarAllRecyclerViewAdapter);
-            arrayList.add(new POJO2(R.drawable.grubhubblack, "6", "$83.39", "57"));
-            arrayList.add(new POJO2(R.drawable.luftblack, "3", "$33.05", "22"));
-            arrayList.add(new POJO2(R.drawable.uberblack, "3", "$27.61", "19"));
+            arrayList.add(new POJO2(R.drawable.grubhubblack, "10", "$157.60", "57"));
+            arrayList.add(new POJO2(R.drawable.luftblack, "5", "$60.83", "22"));
+            arrayList.add(new POJO2(R.drawable.uberblack, "5", "$52.53", "19"));
         dollarAllRecyclerViewAdapter.notifyDataSetChanged();
 
     }
