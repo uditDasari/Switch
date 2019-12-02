@@ -42,10 +42,10 @@ public class DollarALLFragment extends Fragment {
         dollarAllRecyclerViewAdapter=new DollarAllRecyclerViewAdapter(getContext(),arrayList);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(dollarAllRecyclerViewAdapter);
-        arrayList.add(new POJO2(R.drawable.grubhubblack,"6","$19.00","55.56"));
-        arrayList.add(new POJO2(R.drawable.luftblack,"6","$19.00","55.56"));
-        arrayList.add(new POJO2(R.drawable.uberblack,"6","$19.00","55.56"));
-        arrayList.add(new POJO2(R.drawable.taskrabbitblack,"6","$19.00","55.56"));
+            arrayList.add(new POJO2(R.drawable.grubhubblack, "6", "$19.00", "55.56"));
+            arrayList.add(new POJO2(R.drawable.luftblack, "6", "$19.00", "55.56"));
+            arrayList.add(new POJO2(R.drawable.uberblack, "6", "$19.00", "55.56"));
+            arrayList.add(new POJO2(R.drawable.taskrabbitblack, "6", "$19.00", "55.56"));
         dollarAllRecyclerViewAdapter.notifyDataSetChanged();
 
     }

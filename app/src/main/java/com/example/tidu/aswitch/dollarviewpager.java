@@ -5,16 +5,16 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 public class dollarviewpager extends FragmentPagerAdapter {
-
     public dollarviewpager(FragmentManager fm) {
         super(fm);
     }
-
     @Override
     public Fragment getItem(int position) {
         Fragment fragment=null;
         if(position==0)
+        {
             fragment=new DollarALLFragment();
+        }
         else
             fragment=new restFragment();
         return fragment;

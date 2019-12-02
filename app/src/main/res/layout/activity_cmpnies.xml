@@ -54,7 +54,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="end"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:src="@drawable/ic_icons8_checkmark" />
 
     </androidx.cardview.widget.CardView>
@@ -90,7 +90,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="end"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:src="@drawable/ic_icons8_checkmark" />
     </androidx.cardview.widget.CardView>
 
@@ -127,7 +127,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="end"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:src="@drawable/ic_icons8_checkmark" />
     </androidx.cardview.widget.CardView>
 
@@ -164,7 +164,7 @@
             android:layout_height="30dp"
             android:layout_gravity="end"
             android:src="@drawable/ic_icons8_checkmark"
-            android:visibility="gone" />
+            android:visibility="invisible" />
     </androidx.cardview.widget.CardView>
 
     <TextView

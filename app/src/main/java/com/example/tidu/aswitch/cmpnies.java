@@ -28,29 +28,56 @@ public class cmpnies extends AppCompatActivity {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(cmpnies.this,TaskRabbit.class));
-                img12.setVisibility(View.VISIBLE);
+
+                if(img12.getVisibility()==View.INVISIBLE)
+                {
+                    startActivity(new Intent(cmpnies.this,TaskRabbit.class));
+                    img12.setVisibility(View.VISIBLE);
+                }
+                else
+                    img12.setVisibility(View.INVISIBLE);
             }
         });
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(cmpnies.this,LyftActivity.class));
-                img11.setVisibility(View.VISIBLE);
+                if(img11.getVisibility()==View.INVISIBLE)
+
+                {
+                    startActivity(new Intent(cmpnies.this,LyftActivity.class));
+
+                    img11.setVisibility(View.VISIBLE);
+                }
+                else
+                    img11.setVisibility(View.INVISIBLE);
             }
         });
         imageView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(cmpnies.this,UberActivity.class));
-                img13.setVisibility(View.VISIBLE);
+                if(img13.getVisibility()==View.INVISIBLE)
+
+                {
+                    startActivity(new Intent(cmpnies.this,UberActivity.class));
+
+                    img13.setVisibility(View.VISIBLE);
+                }
+                else
+                    img13.setVisibility(View.INVISIBLE);
             }
         });
         imageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(cmpnies.this,Grubhub.class));
-                img14.setVisibility(View.VISIBLE);
+                if(img14.getVisibility()==View.INVISIBLE)
+
+                {
+                    startActivity(new Intent(cmpnies.this,Grubhub.class));
+
+                    img14.setVisibility(View.VISIBLE);
+                }
+                else
+                    img14.setVisibility(View.INVISIBLE);
             }
         });
         textView.setOnClickListener(new View.OnClickListener() {

@@ -61,6 +61,23 @@ public class dollarFragment extends Fragment {
                 startActivity(new Intent(getActivity(),lyftDetail.class));
             }
         });*/
+        tabLayout1.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener(){
+            @Override
+            public void onTabSelected(TabLayout.Tab tab){
+                int position = tab.getPosition();
+
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
         tabLayout.setupWithViewPager(viewPager);
         //getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
         LinearLayout layout = ((LinearLayout) ((LinearLayout) tabLayout.getChildAt(0)).getChildAt(0));
