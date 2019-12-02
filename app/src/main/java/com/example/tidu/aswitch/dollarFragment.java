@@ -14,9 +14,12 @@ import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
+import com.squareup.picasso.Picasso;
 
 
 /**
@@ -28,7 +31,8 @@ public class dollarFragment extends Fragment {
     dollarviewpager pagerAdapter;
     ViewPager viewPager;
     CardView cardView;
-
+    TextView t1,t2,t3;
+    ImageView i1,i2;
     public dollarFragment() {
         // Required empty public constructor
     }
@@ -44,6 +48,12 @@ public class dollarFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         // super.onViewCreated(view, savedInstanceState);
         tabLayout=getView().findViewById(R.id.tabsdollar2);
+        t1=getView().findViewById(R.id.textView8);
+        t2=getView().findViewById(R.id.textView11);
+        t3=getView().findViewById(R.id.textView12);
+        i1=getView().findViewById(R.id.imageView23);
+        i2=getView().findViewById(R.id.imageView24);
+
         viewPager=getView().findViewById(R.id.view_pager_id_dollar);
         pagerAdapter=new dollarviewpager(getFragmentManager());
         viewPager.setAdapter(pagerAdapter);
@@ -65,7 +75,19 @@ public class dollarFragment extends Fragment {
             @Override
             public void onTabSelected(TabLayout.Tab tab){
                 int position = tab.getPosition();
+                if(position==0)
+                {
+                    t1.setText("$144.05");t2.setText("12");t3.setText("$28.81");
+                    Picasso.with(getContext()).load(R.drawable.i4).into(i1);
+                    Picasso.with(getContext()).load(R.drawable.i3).into(i2);
 
+                }
+                else
+                {
+                    t1.setText("$276.50");t2.setText("20");t3.setText("$27.60");
+                    Picasso.with(getContext()).load(R.drawable.i1).into(i1);
+                    Picasso.with(getContext()).load(R.drawable.i2).into(i2);
+                }
             }
 
             @Override
